@@ -1,0 +1,39 @@
+[*] GTKWave view for the short G6 UVM demonstration
+[dumpfile] "waveform.vcd"
+[timestart] 0
+@28
+tb.dut.clk
+@28
+tb.dut.rst
+@28
+tb.dut.abort
+@28
+tb.dut.cmd_valid
+@28
+tb.dut.cmd_ready
+@22
+tb.dut.cmd_offset[13:0]
+@28
+tb.dut.data_valid
+@28
+tb.dut.data_ready
+@28
+tb.dut.enq
+@28
+tb.dut.deq
+@28
+tb.dut.loading
+@22
+tb.dut.lr[1:0]
+@22
+tb.dut.state[4:0]
+@28
+tb.dut.compute_enable
+@28
+tb.dut.core_advance
+@22
+tb.dut.core_phase[1:0]
+@22
+tb.dut.slot[5:0]
+@22
+tb.dut.sums[511:0]

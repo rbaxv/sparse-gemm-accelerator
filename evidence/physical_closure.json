@@ -1,0 +1,59 @@
+{
+  "status": "PASS_BOUNDED_G6",
+  "uvm": "original-run:g6-integrated-uvm-gate-20261107T113814564307Z",
+  "physical": "original-run:g6-route-resume-20261107T124135206076Z",
+  "audit": "original-run:g5-route-audit-20261107T180023675074Z",
+  "clock": "original-run:g5-fixed-layout-clock-20261107T180855991789Z",
+  "area_metrics": {
+    "finish__design__instance__area__class:fill_cell": 201289,
+    "finish__design__instance__area__class:tap_cell": 521.892,
+    "finish__design__instance__area__class:clock_buffer": 2963.77,
+    "finish__design__instance__area__class:timing_repair_buffer": 41668.4,
+    "finish__design__instance__area__class:inverter": 714.742,
+    "finish__design__instance__area__class:clock_inverter": 300.58,
+    "finish__design__instance__area__class:sequential_cell": 46966.3,
+    "finish__design__instance__area__class:multi_input_combinational_cell": 77351.5,
+    "finish__design__instance__area": 170487,
+    "finish__design__die__area": 375469,
+    "finish__design__core__area": 371776,
+    "finish__design__instance__area__stdcell": 170487,
+    "finish__design__instance__area__macros": 0,
+    "finish__design__instance__area__padcells": 0,
+    "finish__design__instance__area__cover": 0
+  },
+  "clock_metrics": {
+    "clocks": 1.0,
+    "period_ns": 5.0,
+    "setup_slack_ns": 2.1239750559524664,
+    "hold_slack_ns": 0.011928902647759865,
+    "setup_violations": 0.0,
+    "hold_violations": 0.0,
+    "slew_violations": 0.0,
+    "cap_violations": 0.0,
+    "fanout_violations": 0.0
+  },
+  "baseline": {
+    "variant": "ws",
+    "utilization_percent": 35,
+    "implementation_period_ns": 20.0,
+    "operating_period_ns": 5,
+    "cell_area_um2": 132540,
+    "core_area_um2": 295278,
+    "macro_area_um2": 0,
+    "setup_slack_ns": 2.320754543116012,
+    "hold_slack_ns": 0.02050248917560276,
+    "physical": "original-run:g5-route-ws-resume-20261106T160507896071Z",
+    "audit": "original-run:g5-route-audit-20261106T170156203550Z",
+    "operating_audit": "original-run:g5-fixed-layout-clock-20261106T180127361816Z",
+    "functional": "original-run:g5-postroute-functional-20261106T170314178614Z"
+  },
+  "followthrough": "original-run:g6-physical-followthrough-20261107T180023648185Z",
+  "scope": "selected WS overlap plus packed transport; one Nangate45 layout, directed functional scope, no universal speedup or signoff",
+  "comparison": {
+    "routed_cell_area_percent": 28.63060208239021,
+    "core_area_percent": 25.907111264638736,
+    "directed_sparse_cycles_reduction_percent": 26.76056338028169,
+    "directed_sparse_host_words_reduction_percent": 18.75
+  },
+  "original_run_id": "g6-integrated-closure-20261107T180928207164Z"
+}

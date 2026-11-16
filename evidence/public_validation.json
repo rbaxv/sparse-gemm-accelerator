@@ -1,0 +1,465 @@
+{
+  "scope": "Public-source validation; original layout re-audited read-only, no new route. Full UVM snapshot preceded final whitespace/comments only; source_review establishes token equality.",
+  "unit_tests": "155 passed",
+  "sv_token_preservation_files": 31,
+  "copied_python_ast_preserved": true,
+  "runs": [
+    {
+      "run_id": "compare-20261112T115606152313Z",
+      "result": {
+        "status": "PASS_DIRECTED_12_JOBS_PER_DESIGN",
+        "task": "compare",
+        "commands": [
+          [
+            "iverilog",
+            "-g2012",
+            "-s",
+            "tb",
+            "-o",
+            "public-workspace/results/compare-20261112T115606152313Z/baseline/sim",
+            "public-workspace/results/compare-20261112T115606152313Z/source/rtl/wrapper/ws_wrapper.sv",
+            "public-workspace/results/compare-20261112T115606152313Z/source/rtl/wrapper/slab_loader.sv",
+            "public-workspace/results/compare-20261112T115606152313Z/source/rtl/sparse_ws/sparse_ws.sv",
+            "public-workspace/results/compare-20261112T115606152313Z/source/verification/directed/baseline/tb.sv"
+          ],
+          [
+            "vvp",
+            "public-workspace/results/compare-20261112T115606152313Z/baseline/sim"
+          ],
+          [
+            "iverilog",
+            "-g2012",
+            "-s",
+            "tb",
+            "-o",
+            "public-workspace/results/compare-20261112T115606152313Z/candidate/sim",
+            "public-workspace/results/compare-20261112T115606152313Z/source/rtl/ws_integrated/ws_integrated.sv",
+            "public-workspace/results/compare-20261112T115606152313Z/source/rtl/ws_integrated/packed_slab_loader.sv",
+            "public-workspace/results/compare-20261112T115606152313Z/source/rtl/wrapper/slab_loader.sv",
+            "public-workspace/results/compare-20261112T115606152313Z/source/rtl/sparse_ws/sparse_ws.sv",
+            "public-workspace/results/compare-20261112T115606152313Z/source/verification/directed/candidate/tb.sv"
+          ],
+          [
+            "vvp",
+            "public-workspace/results/compare-20261112T115606152313Z/candidate/sim"
+          ]
+        ],
+        "sources": {
+          "rtl/wrapper/ws_wrapper.sv": "e33b7fc286275e4b82fa69cf06b3963cddb09a2c508c4cb7b1741cbb86ac14e0",
+          "rtl/wrapper/slab_loader.sv": "e734a020835ae15673db6cf0455c4ad8b333baaf4bb20c5db452702eb876a342",
+          "rtl/sparse_ws/sparse_ws.sv": "149f0c85ad204e4f7302040ad46750ce2418f7ee38e91de0b45e9bfab5a39813",
+          "verification/directed/baseline/tb.sv": "3c68ac72e7de687b2024f48cf4473539a578c61036895a568b6d8d5c961b03d4",
+          "rtl/ws_integrated/ws_integrated.sv": "e0961c1de0aa6d44e4f4eee8351ae80c386d6d36311d723f3c6793f7e88f098d",
+          "rtl/ws_integrated/packed_slab_loader.sv": "67ec86cc74e2a76a58f318f38ce390cfd81f4d7f90d0fd94cac52b4a8aa288b4",
+          "verification/directed/candidate/tb.sv": "1cfac1fe9c7e87737a6359809915f91e217cd5637e7ae329d625a70c73ad977b"
+        },
+        "versions": {
+          "iverilog": "Icarus Verilog version 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 2000-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 1999-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 1998-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+          "vvp": "Icarus Verilog runtime version 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n"
+        }
+      }
+    },
+    {
+      "run_id": "compare-20261112T120630563780Z",
+      "result": {
+        "status": "PASS_DIRECTED_12_JOBS_PER_DESIGN",
+        "task": "compare",
+        "commands": [
+          [
+            "iverilog",
+            "-g2012",
+            "-s",
+            "tb",
+            "-o",
+            "public-workspace/results/compare-20261112T120630563780Z/baseline/sim",
+            "public-workspace/results/compare-20261112T120630563780Z/source/rtl/wrapper/ws_wrapper.sv",
+            "public-workspace/results/compare-20261112T120630563780Z/source/rtl/wrapper/slab_loader.sv",
+            "public-workspace/results/compare-20261112T120630563780Z/source/rtl/sparse_ws/sparse_ws.sv",
+            "public-workspace/results/compare-20261112T120630563780Z/source/verification/directed/baseline/tb.sv"
+          ],
+          [
+            "vvp",
+            "public-workspace/results/compare-20261112T120630563780Z/baseline/sim"
+          ],
+          [
+            "iverilog",
+            "-g2012",
+            "-s",
+            "tb",
+            "-o",
+            "public-workspace/results/compare-20261112T120630563780Z/candidate/sim",
+            "public-workspace/results/compare-20261112T120630563780Z/source/rtl/ws_integrated/ws_integrated.sv",
+            "public-workspace/results/compare-20261112T120630563780Z/source/rtl/ws_integrated/packed_slab_loader.sv",
+            "public-workspace/results/compare-20261112T120630563780Z/source/rtl/wrapper/slab_loader.sv",
+            "public-workspace/results/compare-20261112T120630563780Z/source/rtl/sparse_ws/sparse_ws.sv",
+            "public-workspace/results/compare-20261112T120630563780Z/source/verification/directed/candidate/tb.sv"
+          ],
+          [
+            "vvp",
+            "public-workspace/results/compare-20261112T120630563780Z/candidate/sim"
+          ]
+        ],
+        "sources": {
+          "rtl/wrapper/ws_wrapper.sv": "e33b7fc286275e4b82fa69cf06b3963cddb09a2c508c4cb7b1741cbb86ac14e0",
+          "rtl/wrapper/slab_loader.sv": "e734a020835ae15673db6cf0455c4ad8b333baaf4bb20c5db452702eb876a342",
+          "rtl/sparse_ws/sparse_ws.sv": "149f0c85ad204e4f7302040ad46750ce2418f7ee38e91de0b45e9bfab5a39813",
+          "verification/directed/baseline/tb.sv": "3c68ac72e7de687b2024f48cf4473539a578c61036895a568b6d8d5c961b03d4",
+          "rtl/ws_integrated/ws_integrated.sv": "0a8b6944022b6de62e3e77c6489d945e946d249c9653fa6e2ecfadc96d0f6663",
+          "rtl/ws_integrated/packed_slab_loader.sv": "67ec86cc74e2a76a58f318f38ce390cfd81f4d7f90d0fd94cac52b4a8aa288b4",
+          "verification/directed/candidate/tb.sv": "1cfac1fe9c7e87737a6359809915f91e217cd5637e7ae329d625a70c73ad977b"
+        },
+        "versions": {
+          "iverilog": "Icarus Verilog version 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 2000-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 1999-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 1998-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+          "vvp": "Icarus Verilog runtime version 14.0 (devel) (s20260301-812-g9f2605013-dirty)\n\nCopyright (c) 2001-2026 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n"
+        }
+      }
+    },
+    {
+      "run_id": "g5-fixed-layout-clock-20261112T120453518202Z",
+      "result": {
+        "status": "PASS",
+        "input_audit": "public-workspace/results/g5-route-audit-20261112T120318849903Z",
+        "operating_period_ns": 5.0,
+        "commands": [
+          [
+            "openroad",
+            "-exit",
+            "public-workspace/results/g5-fixed-layout-clock-20261112T120453518202Z/audit.tcl"
+          ]
+        ],
+        "checks": {
+          "one_clock": true,
+          "requested_period": true,
+          "constraint_audit_clean": true,
+          "setup_nonnegative": true,
+          "hold_nonnegative": true,
+          "setup_violations": true,
+          "hold_violations": true,
+          "slew_violations": true,
+          "cap_violations": true,
+          "fanout_violations": true
+        },
+        "metrics": {
+          "clocks": 1.0,
+          "period_ns": 5.0,
+          "setup_slack_ns": 2.1239750559524664,
+          "hold_slack_ns": 0.011928902647759865,
+          "setup_violations": 0.0,
+          "hold_violations": 0.0,
+          "slew_violations": 0.0,
+          "cap_violations": 0.0,
+          "fanout_violations": 0.0
+        },
+        "physical": "original-workspace/results/g6-route-resume-20261107T124135206076Z",
+        "implementation_period_ns": 20.0,
+        "input_hashes": {
+          "public-workspace/results/g5-route-audit-20261112T120318849903Z/audit.json": "b20c7b04caf6f76d1c1d6ff5479135e4e3bc3953799ff4eaa7c2d67700b0d031",
+          "original-workspace/results/g6-route-resume-20261107T124135206076Z/results/nangate45/gemm_accel/base/6_final.odb": "0fa4660621a4e8f41d37203cd97867cbb482d474e550710c7515c41cc4d99554",
+          "original-workspace/results/g6-route-resume-20261107T124135206076Z/results/nangate45/gemm_accel/base/6_final.spef": "505f43794df72755b29562a93e98899654be41d3b2f8f2ca6cce2aedbd4db30e",
+          "original-workspace/results/g6-route-resume-20261107T124135206076Z/results/nangate45/gemm_accel/base/6_final.sdc": "2fe557b5a26f7adbf5ff947268d65a60ed630a53da37c66b4115383a33e1104b",
+          "original-workspace/tools/orfs-pinned/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1"
+        },
+        "version": "OpenROAD 26Q2-1164-g08f67ee5ec",
+        "limits": "Unchanged routed implementation, different operating period only. Single-corner Nangate45 STA; not synthesis/P&R optimized at new period, SDF, exhaustive Fmax, power or sign-off."
+      }
+    },
+    {
+      "run_id": "g5-route-audit-20261112T120318849903Z",
+      "result": {
+        "physical_run": "original-workspace/results/g6-route-resume-20261107T124135206076Z",
+        "command": [
+          "openroad",
+          "-exit",
+          "public-workspace/results/g5-route-audit-20261112T120318849903Z/audit.tcl"
+        ],
+        "checks": {
+          "flow_completed": true,
+          "artifacts_complete": true,
+          "sta_executed": true,
+          "constraint_audit_clean": true,
+          "setup_nonnegative": true,
+          "hold_nonnegative": true,
+          "setup_violations_zero": true,
+          "hold_violations_zero": true,
+          "router_drc_empty": true,
+          "max_slew_zero": true,
+          "max_cap_zero": true,
+          "max_fanout_zero": true
+        },
+        "metrics": {
+          "finish__design__instance__area__class:fill_cell": 201289,
+          "finish__design__instance__area__class:tap_cell": 521.892,
+          "finish__design__instance__area__class:clock_buffer": 2963.77,
+          "finish__design__instance__area__class:timing_repair_buffer": 41668.4,
+          "finish__design__instance__area__class:inverter": 714.742,
+          "finish__design__instance__area__class:clock_inverter": 300.58,
+          "finish__design__instance__area__class:sequential_cell": 46966.3,
+          "finish__design__instance__area__class:multi_input_combinational_cell": 77351.5,
+          "finish__design__instance__area": 170487,
+          "finish__timing__setup__tns": 0,
+          "finish__timing__hold__tns": 0,
+          "finish__timing__setup__ws": 17.124,
+          "finish__timing__hold__ws": 0.0119289,
+          "finish__timing__drv__max_slew_limit": 0.383678,
+          "finish__timing__drv__max_slew": 0,
+          "finish__timing__drv__max_cap_limit": 0.0391399,
+          "finish__timing__drv__max_cap": 0,
+          "finish__timing__drv__max_fanout_limit": 0,
+          "finish__timing__drv__max_fanout": 0,
+          "finish__timing__drv__setup_violation_count": 0,
+          "finish__timing__drv__hold_violation_count": 0,
+          "finish__design__die__area": 375469,
+          "finish__design__core__area": 371776,
+          "finish__design__instance__area__stdcell": 170487,
+          "finish__design__instance__area__macros": 0,
+          "finish__design__instance__area__padcells": 0,
+          "finish__design__instance__area__cover": 0
+        },
+        "missing": [],
+        "hashes": {
+          "results/nangate45/gemm_accel/base/6_final.odb": "0fa4660621a4e8f41d37203cd97867cbb482d474e550710c7515c41cc4d99554",
+          "results/nangate45/gemm_accel/base/6_final.sdc": "2fe557b5a26f7adbf5ff947268d65a60ed630a53da37c66b4115383a33e1104b",
+          "results/nangate45/gemm_accel/base/6_final.spef": "505f43794df72755b29562a93e98899654be41d3b2f8f2ca6cce2aedbd4db30e",
+          "results/nangate45/gemm_accel/base/6_final.gds": "b326ea104cc48adbe2a0f068d5f2470c188e6a7e453fa004d45a83910dc64920",
+          "results/nangate45/gemm_accel/base/6_final.def": "49fa0c491b86b1b374a506b5c98bb7b0465b539434b546d7b2758270242028c8",
+          "results/nangate45/gemm_accel/base/6_final.v": "499f526e2e0f60a474fa23121cb47a740a34f3a2d1d695790df2a25ca0513ba8",
+          "reports/nangate45/gemm_accel/base/5_route_drc.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reports/nangate45/gemm_accel/base/6_finish.rpt": "c528f9bd3bae0f5e9b6b2a2c9ffe8d609a3d3cbf17212de1eb218e3e8bcc906a",
+          "logs/nangate45/gemm_accel/base/6_report.json": "e0b19125020c0730475df52691941fef9046885bf1b942e6247271fd481e1f52",
+          "source/rtl/physical/integrated_top.sv": "ef4f08a583d674605a732cad6d13895320ce06a938514cde73e413344beb3e88",
+          "config.mk": "ea2fd84dc7e44695f8dee4e5c4897c1aa2882073d222f52daa28ce87d319e27b",
+          "constraint.sdc": "59b24a80dcbfb61919c376a3a8803badb1c2f2c20f261f5f1bd46911372bf116"
+        },
+        "pass": true,
+        "limits": [
+          "Nangate45 single-corner educational flow; no foundry sign-off LVS/DRC",
+          "No SDF simulation or activity-qualified power",
+          "Host-only 4x4 buffered wrapper; matched study requires all selected variants/settings",
+          "STA clock-min-period output is not a searched/validated Fmax"
+        ]
+      }
+    },
+    {
+      "run_id": "g6-integrated-uvm-gate-20261112T115432734268Z",
+      "result": {
+        "status": "PASS_UVM_DECLARED_SCOPE",
+        "sources": {
+          "rtl/ws_integrated/ws_integrated.sv": "c2ea8a2fb9f54294ddab37ef96cb30ce4b6eb08efc92a54ebe336d1bad24f96a",
+          "rtl/ws_integrated/packed_slab_loader.sv": "bf4e2cde3e1b216b440b14f414701d5080188cc1cef081765d5f34a2cf5edf8e",
+          "rtl/wrapper/slab_loader.sv": "e734a020835ae15673db6cf0455c4ad8b333baaf4bb20c5db452702eb876a342",
+          "rtl/sparse_ws/sparse_ws.sv": "127f396adf8d66681adadb88ee0036ffb04a67e829c4cc43ef7d1e77701a3a29",
+          "verification/uvm/ws_integrated_tb.sv": "2bfc73da6694fcf93fb837269e1a0a7f48044d28ca6c473f8c1bf3232897498f",
+          "scripts/run_uvm.py": "cb179df7b0417c5fba8fc8069347115c694a040b82a53b7656dccb4e26ed3055",
+          "scripts/check_simulation.py": "e8bdeb10296e28ad6ed80f15860f65bc20435279f1e0fe671b0c267ea17182c5"
+        },
+        "commands": [
+          [
+            "verilator",
+            "--binary",
+            "--timing",
+            "--vpi",
+            "--assert",
+            "--output-groups",
+            "0",
+            "-j",
+            "1",
+            "-Wno-fatal",
+            "--top-module",
+            "tb",
+            "--Mdir",
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/build",
+            "+incdir+original-workspace/tools/1800.2-2020.3.2/src",
+            "original-workspace/tools/1800.2-2020.3.2/src/uvm_pkg.sv",
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/source/rtl/ws_integrated/ws_integrated.sv",
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/source/rtl/ws_integrated/packed_slab_loader.sv",
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/source/rtl/wrapper/slab_loader.sv",
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/source/rtl/sparse_ws/sparse_ws.sv",
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/source/verification/uvm/ws_integrated_tb.sv",
+            "original-workspace/tools/1800.2-2020.3.2/src/dpi/uvm_dpi.cc",
+            "-CFLAGS",
+            "-O0 -Ioriginal-workspace/tools/1800.2-2020.3.2/src/dpi",
+            "-MAKEFLAGS",
+            "OPT_FAST=-O0 OPT_SLOW=-O0"
+          ],
+          [
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/build/Vtb"
+          ],
+          [
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/build/Vtb",
+            "+NOSTALL"
+          ],
+          [
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/build/Vtb"
+          ],
+          [
+            "public-workspace/results/g6-integrated-uvm-gate-20261112T115432734268Z/build/Vtb",
+            "+MUTATE"
+          ]
+        ],
+        "tests": [
+          {
+            "name": "stalled",
+            "returncode": 0,
+            "accepted": true,
+            "expected_rejection": false
+          },
+          {
+            "name": "nostall",
+            "returncode": 0,
+            "accepted": true,
+            "expected_rejection": false
+          },
+          {
+            "name": "replay",
+            "returncode": 0,
+            "accepted": true,
+            "expected_rejection": false
+          },
+          {
+            "name": "mutation",
+            "returncode": 0,
+            "accepted": false,
+            "expected_rejection": true
+          }
+        ],
+        "versions": {
+          "verilator": "Verilator 5.055 devel rev v5.054-55-gc0e51cadc (mod)",
+          "yosys": "Yosys 0.70+329 (git sha1 b8d84f823, Release, Clang /usr/bin/clang++ 21.1.8)"
+        },
+        "required_bins": 242,
+        "replay_equal": true
+      }
+    },
+    {
+      "run_id": "g6-ws-study-20261112T120031982738Z",
+      "result": {
+        "status": "PASS_MODEL_ONLY",
+        "command": "python scripts/run_model_study.py",
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "hashes": {
+          "model/ws_optimization.py": "ea410bb63420d42693785bce2b053c9667343fe30d79d419af0b5cfcd0377e46",
+          "scripts/run_model_study.py": "cb44bbfbe7a277a9b904ce6077a68a05d304ade1c37541e33318c18aec83516a",
+          "model/oracle.py": "26f39ddbab12bba22c738aee2d493341048c77f9c570f0a2d72913890d8c4919",
+          "model/comparison.py": "38273f9157cf42fc5c1175496c6a8dd3036d8bd857b813bb4f44ccbe6223d39a",
+          "datasets/study_vectors.json": "9a389b44e225b6a998fa320d06920f97f439ed937b04a43acafaf8aabc0caf0d",
+          "datasets/baseline_measurements.json": "5f24d722bc6832054385b40481948b5e690f66b5626b856b4acb283e75fe8506"
+        },
+        "executions": 3840,
+        "baseline_reconciliations": 160
+      }
+    },
+    {
+      "run_id": "synth-20261112T115608710382Z",
+      "result": {
+        "status": "PASS_GENERIC_SYNTHESIS",
+        "task": "synth",
+        "commands": [
+          [
+            "yosys",
+            "-s",
+            "synthesis.ys"
+          ]
+        ],
+        "sources": {
+          "rtl/ws_integrated/ws_integrated.sv": "e0961c1de0aa6d44e4f4eee8351ae80c386d6d36311d723f3c6793f7e88f098d",
+          "rtl/ws_integrated/packed_slab_loader.sv": "67ec86cc74e2a76a58f318f38ce390cfd81f4d7f90d0fd94cac52b4a8aa288b4",
+          "rtl/wrapper/slab_loader.sv": "e734a020835ae15673db6cf0455c4ad8b333baaf4bb20c5db452702eb876a342",
+          "rtl/sparse_ws/sparse_ws.sv": "149f0c85ad204e4f7302040ad46750ce2418f7ee38e91de0b45e9bfab5a39813"
+        },
+        "versions": {
+          "yosys": "Yosys 0.70+329 (git sha1 b8d84f823, Release, Clang /usr/bin/clang++ 21.1.8)\n"
+        },
+        "pe_multipliers": 16,
+        "other_multiplier_parameters": [
+          {
+            "A_SIGNED": 0,
+            "A_WIDTH": 3,
+            "B_SIGNED": 0,
+            "B_WIDTH": 4,
+            "Y_WIDTH": 7
+          },
+          {
+            "A_SIGNED": 0,
+            "A_WIDTH": 9,
+            "B_SIGNED": 0,
+            "B_WIDTH": 5,
+            "Y_WIDTH": 9
+          },
+          {
+            "A_SIGNED": 0,
+            "A_WIDTH": 5,
+            "B_SIGNED": 0,
+            "B_WIDTH": 5,
+            "Y_WIDTH": 7
+          },
+          {
+            "A_SIGNED": 0,
+            "A_WIDTH": 3,
+            "B_SIGNED": 0,
+            "B_WIDTH": 5,
+            "Y_WIDTH": 5
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "waveform-20261112T115955841608Z",
+      "result": {
+        "status": "PASS_SHORT_WAVEFORM_ONLY",
+        "task": "waveform",
+        "commands": [
+          [
+            "verilator",
+            "--binary",
+            "--timing",
+            "--vpi",
+            "--assert",
+            "--trace",
+            "--trace-depth",
+            "6",
+            "--output-groups",
+            "0",
+            "-j",
+            "1",
+            "-Wno-fatal",
+            "--top-module",
+            "tb",
+            "--Mdir",
+            "public-workspace/results/waveform-20261112T115955841608Z/build",
+            "+incdir+original-workspace/tools/1800.2-2020.3.2/src",
+            "original-workspace/tools/1800.2-2020.3.2/src/uvm_pkg.sv",
+            "public-workspace/results/waveform-20261112T115955841608Z/source/rtl/ws_integrated/ws_integrated.sv",
+            "public-workspace/results/waveform-20261112T115955841608Z/source/rtl/ws_integrated/packed_slab_loader.sv",
+            "public-workspace/results/waveform-20261112T115955841608Z/source/rtl/wrapper/slab_loader.sv",
+            "public-workspace/results/waveform-20261112T115955841608Z/source/rtl/sparse_ws/sparse_ws.sv",
+            "public-workspace/results/waveform-20261112T115955841608Z/source/verification/demos/demo_tb.sv",
+            "original-workspace/tools/1800.2-2020.3.2/src/dpi/uvm_dpi.cc",
+            "-CFLAGS",
+            "-O0 -Ioriginal-workspace/tools/1800.2-2020.3.2/src/dpi",
+            "-MAKEFLAGS",
+            "OPT_FAST=-O0 OPT_SLOW=-O0"
+          ],
+          [
+            "public-workspace/results/waveform-20261112T115955841608Z/build/Vtb"
+          ]
+        ],
+        "sources": {
+          "rtl/ws_integrated/ws_integrated.sv": "e0961c1de0aa6d44e4f4eee8351ae80c386d6d36311d723f3c6793f7e88f098d",
+          "rtl/ws_integrated/packed_slab_loader.sv": "67ec86cc74e2a76a58f318f38ce390cfd81f4d7f90d0fd94cac52b4a8aa288b4",
+          "rtl/wrapper/slab_loader.sv": "e734a020835ae15673db6cf0455c4ad8b333baaf4bb20c5db452702eb876a342",
+          "rtl/sparse_ws/sparse_ws.sv": "149f0c85ad204e4f7302040ad46750ce2418f7ee38e91de0b45e9bfab5a39813",
+          "verification/demos/demo_tb.sv": "604a072febc99398d6a67db2bc448095005896e359ceaa49bd562a8e5db01988"
+        },
+        "versions": {
+          "verilator": "Verilator 5.055 devel rev v5.054-55-gc0e51cadc (mod)\n",
+          "public-workspace/results/waveform-20261112T115955841608Z/build/Vtb": "UVM_INFO original-workspace/tools/1800.2-2020.3.2/src/base/uvm_root.svh(457) @ 0: reporter [UVM/RELNOTES] \n  ***********       IMPORTANT RELEASE NOTES         ************\n\n  This implementation of the UVM Library deviates from the 1800.2-2020\n  standard.  See the DEVIATIONS.md file contained in the release\n  for more details.\n\n----------------------------------------------------------------\nAccellera:1800.2:UVM:2020.3.2\n\nAll copyright owners for this kit are listed in NOTICE.txt\nAll Rights Reserved Worldwide\n----------------------------------------------------------------\n\n      (Specify +UVM_NO_RELNOTES to turn off this notice)\n\nUVM_INFO @ 0: reporter [RNTST] Running test integrated_test...\nUVM_INFO public-workspace/results/waveform-20261112T115955841608Z/source/verification/demos/demo_tb.sv(490) @ 27567000: uvm_test_top [WAVEFORM_DEMO_PASS] tick_checks=1995 final_job_id=28\nUVM_INFO public-workspace/results/waveform-20261112T115955841608Z/source/verification/demos/demo_tb.sv(506) @ 27567000: uvm_test_top [MONITORS] edges=2757 cmds=27 words=362 products=7088 sums=7088\nUVM_INFO original-workspace/tools/1800.2-2020.3.2/src/base/uvm_report_server.svh(1009) @ 27567000: reporter [UVM/REPORT/SERVER] \n--- UVM Report Summary ---\n\n** Report counts by severity\nUVM_INFO :    4\nUVM_WARNING :    0\nUVM_ERROR :    0\nUVM_FATAL :    0\n** Report counts by id\n[MONITORS]     1\n[RNTST]     1\n[UVM/RELNOTES]     1\n[WAVEFORM_DEMO_PASS]     1\n\n- original-workspace/tools/1800.2-2020.3.2/src/base/uvm_test_runner.svh:297: Verilog $finish\n- S i m u l a t i o n   R e p o r t: Verilator 5.055 devel\n- Verilator: $finish at 28us; walltime 0.310 s; speed 89.018 us/s\n- Verilator: cpu 0.309 s on 1 threads; allocated 20 MB\n"
+        }
+      }
+    }
+  ],
+  "clean_checkout": {
+    "unit_tests": "155 passed",
+    "directed_comparison": "PASS_DIRECTED_12_JOBS_PER_DESIGN",
+    "method": "Copied only public folder to a separate temporary directory; ran from outside that directory with GEMM_ROOT unset. External installed tools remained on PATH."
+  }
+}

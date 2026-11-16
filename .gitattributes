@@ -1,0 +1,7 @@
+* text=auto
+*.sv text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.png binary
+# Preserve captured simulator log whitespace.
+evidence/public_logs/** -whitespace

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="330" viewBox="0 0 1100 330">
+<rect width="1100" height="330" rx="16" fill="#0f172a"/>
+<g font-family="Arial,sans-serif" fill="#f8fafc">
+<text x="35" y="40" font-size="23" font-weight="bold">Selected WS candidate · TK=16 · one multiplier per PE</text>
+<g fill="#1e293b" stroke="#38bdf8" stroke-width="2">
+<rect x="35" y="100" width="175" height="115" rx="10"/><rect x="255" y="100" width="210" height="115" rx="10"/>
+<rect x="510" y="85" width="200" height="65" rx="10"/><rect x="510" y="165" width="200" height="65" rx="10"/>
+<rect x="755" y="100" width="155" height="115" rx="10"/><rect x="950" y="100" width="115" height="115" rx="10"/>
+</g>
+<g font-size="17" text-anchor="middle">
+<text x="122" y="132">32-bit host</text><text x="122" y="159">valid / ready</text><text x="122" y="186">descriptors + data</text>
+<text x="360" y="131">Packed-weight adapter</text><text x="360" y="159">64-bit reservoir</text><text x="360" y="186">19-bit records</text>
+<text x="610" y="113">Operand buffer 0</text><text x="610" y="137">load / ready / compute</text>
+<text x="610" y="192">Operand buffer 1</text><text x="610" y="216">load / ready / compute</text>
+<text x="832" y="132">4 × 4 WS PEs</text><text x="832" y="159">INT8 × INT8</text><text x="832" y="186">INT32 sums</text>
+<text x="1007" y="144">PSUM</text><text x="1007" y="173">+ output</text>
+</g>
+<g stroke="#38bdf8" stroke-width="3" fill="none"><path d="M210 157H250m-8 -6l8 6 -8 6M465 157H505m-8 -6l8 6 -8 6M710 157H750m-8 -6l8 6 -8 6M910 157H945m-8 -6l8 6 -8 6"/></g>
+<text x="35" y="278" font-size="18">Overlap hides loading when another slab is ready; packing reduces host words.</text>
+<text x="35" y="306" font-size="16" fill="#cbd5e1">Tail masking is arithmetic validity. Transport padding is a separate bitstream property.</text>
+</g></svg>

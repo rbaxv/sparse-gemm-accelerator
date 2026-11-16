@@ -1,0 +1,19 @@
+{
+  "synth-20261112T115608710382Z/synthesis.log": {
+    "Yosys warning": 16
+  },
+  "g6-integrated-uvm-gate-20261112T115432734268Z/build.log": {
+    "PINMISSING": 7,
+    "TIMESCALEMOD": 5,
+    "WIDTHTRUNC": 18,
+    "WIDTHEXPAND": 39,
+    "CASEINCOMPLETE": 1
+  },
+  "waveform-20261112T115955841608Z/build.log": {
+    "PINMISSING": 7,
+    "TIMESCALEMOD": 5,
+    "WIDTHTRUNC": 18,
+    "WIDTHEXPAND": 39,
+    "CASEINCOMPLETE": 1
+  }
+}

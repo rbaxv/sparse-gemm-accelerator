@@ -1,0 +1,90 @@
+{
+  "status": "PASS_UVM_DECLARED_SCOPE",
+  "sources": {
+    "rtl/ws_integrated/ws_integrated.sv": "4beecc14fb487bda109532a3ecac37ee38445890ded62ba36c7e2a0ce6d5dcf5",
+    "rtl/ws_integrated/packed_slab_loader.sv": "15b6fcd3f91aea331c6aa8ee030ddb56d36cbfb726711b7e518356b4d81cca50",
+    "rtl/wrapper/slab_loader.sv": "050da1cb42eb098ab5f9953b948311209f9caae0039a5662c1019c0fc5ab3d9b",
+    "rtl/sparse_ws/sparse_ws.sv": "0f99a334b470ce3a31818619ac9ac49be1152773ac7728f03b048f5fe3ccd46e",
+    "verification/uvm/ws_integrated_tb.sv": "2bfc73da6694fcf93fb837269e1a0a7f48044d28ca6c473f8c1bf3232897498f",
+    "docs/WS_INTEGRATED_CONTRACT.md": "47ecada3a23c0fd0ffde3473e2e7e365219f362df1c37a9743e34eaecc0fa954",
+    "scripts/run_ws_integrated_gate.py": "3b08b4d9da256a79159a862ba5701bd3db3c2aa7a617f11e4f307af1a0182cb1",
+    "scripts/check_simulation.py": "e8bdeb10296e28ad6ed80f15860f65bc20435279f1e0fe671b0c267ea17182c5"
+  },
+  "commands": [
+    [
+      "verilator",
+      "--binary",
+      "--timing",
+      "--vpi",
+      "--assert",
+      "--output-groups",
+      "0",
+      "-j",
+      "1",
+      "-Wno-fatal",
+      "--top-module",
+      "tb",
+      "--Mdir",
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/build",
+      "+incdir+original-workspace/tools/1800.2-2020.3.2/src",
+      "original-workspace/tools/1800.2-2020.3.2/src/uvm_pkg.sv",
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/source/rtl/ws_integrated/ws_integrated.sv",
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/source/rtl/ws_integrated/packed_slab_loader.sv",
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/source/rtl/wrapper/slab_loader.sv",
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/source/rtl/sparse_ws/sparse_ws.sv",
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/source/verification/uvm/ws_integrated_tb.sv",
+      "original-workspace/tools/1800.2-2020.3.2/src/dpi/uvm_dpi.cc",
+      "-CFLAGS",
+      "-O0 -Ioriginal-workspace/tools/1800.2-2020.3.2/src/dpi",
+      "-MAKEFLAGS",
+      "OPT_FAST=-O0 OPT_SLOW=-O0"
+    ],
+    [
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/build/Vtb"
+    ],
+    [
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/build/Vtb",
+      "+NOSTALL"
+    ],
+    [
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/build/Vtb"
+    ],
+    [
+      "original-run:g6-integrated-uvm-gate-20261107T113814564307Z/build/Vtb",
+      "+MUTATE"
+    ]
+  ],
+  "tests": [
+    {
+      "name": "stalled",
+      "returncode": 0,
+      "accepted": true,
+      "expected_rejection": false
+    },
+    {
+      "name": "nostall",
+      "returncode": 0,
+      "accepted": true,
+      "expected_rejection": false
+    },
+    {
+      "name": "replay",
+      "returncode": 0,
+      "accepted": true,
+      "expected_rejection": false
+    },
+    {
+      "name": "mutation",
+      "returncode": 0,
+      "accepted": false,
+      "expected_rejection": true
+    }
+  ],
+  "versions": {
+    "verilator": "Verilator 5.055 devel rev v5.054-55-gc0e51cadc (mod)",
+    "yosys": "Yosys 0.70+329 (git sha1 b8d84f823, Release, Clang /usr/bin/clang++ 21.1.8)"
+  },
+  "required_bins": 242,
+  "replay_equal": true,
+  "original_run_id": "g6-integrated-uvm-gate-20261107T113814564307Z"
+}

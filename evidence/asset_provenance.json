@@ -1,0 +1,23 @@
+[
+  {
+    "asset": "packing.png",
+    "source_run": "g6-uvm-waveform-demo-20261111T201500322205Z",
+    "source_capture": "packing_detail.png",
+    "source_sha256": "d05f47c8c52fbc315b42b843d13cbfa86dfbec4364b4d7738fb13b022863ad30",
+    "edit": "Crop 50 titlebar pixels; signal pixels unchanged."
+  },
+  {
+    "asset": "pe.png",
+    "source_run": "g6-uvm-waveform-demo-20261111T201500322205Z",
+    "source_capture": "pe_detail.png",
+    "source_sha256": "abd2780b76d87e872954740644fdfe442c3d48c136dc18ed659e9b0de0dfcfdd",
+    "edit": "Crop 50 titlebar pixels; signal pixels unchanged."
+  },
+  {
+    "asset": "buffers.png",
+    "source_run": "g6-uvm-waveform-demo-20261111T201500322205Z",
+    "source_capture": "buffers_detail.png",
+    "source_sha256": "719dc0ad769c3ba0dcf888fbb1cebd89ebdc5d2ed33a7f107107433e9b789d4e",
+    "edit": "Crop 50 titlebar pixels; signal pixels unchanged."
+  }
+]

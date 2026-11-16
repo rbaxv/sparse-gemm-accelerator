@@ -1,0 +1,35 @@
+[*] GTKWave view for the short G6 UVM demonstration
+[dumpfile] "waveform.vcd"
+[timestart] 0
+@28
+tb.dut.clk
+@22
+tb.dut.data[31:0]
+@28
+tb.dut.data_valid
+@28
+tb.dut.data_ready
+@28
+tb.dut.buffers[0].loader.sparse
+@28
+tb.dut.buffers[0].loader.weights
+@28
+tb.dut.buffers[0].loader.accept
+@22
+tb.dut.buffers[0].loader.reservoir[63:0]
+@22
+tb.dut.buffers[0].loader.bits[5:0]
+@28
+tb.dut.buffers[0].loader.pop
+@22
+tb.dut.buffers[0].loader.records_left[4:0]
+@22
+tb.dut.buffers[0].loader.beats_left[3:0]
+@22
+tb.dut.buffers[0].loader.last_bits[5:0]
+@22
+tb.dut.buffers[0].loader.dw[31:0]
+@28
+tb.dut.buffers[0].loader.bad
+@28
+tb.dut.buffers[0].loader.error

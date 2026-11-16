@@ -1,0 +1,15 @@
+/results/
+/build/
+/tools/
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.vcd
+*.fst
+*.gds
+*.odb
+*.spef
+*.log
+.env
+.DS_Store
